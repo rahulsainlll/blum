@@ -3,19 +3,6 @@ Configuration file for target Instagram accounts
 """
 
 TARGET_ACCOUNTS = [
-    "robertlewandowski",
-    "erling.haaland",
-    "mohamed.salah",
-    "sadio_mane",
-    "kevindebruyne",
-    "virgilvandijk",
-    "andrewrobertson",
-    "trentarnold66",
-    "alissonbecker",
-    "edersonmoraes93",
-    "edenhazard",
-    "thibautcourtois",
-    "karimbenzema",
     "vinijr",
     "rodrigo",
     "federicovalverde",
