@@ -7,6 +7,16 @@ from ...utils.human_behaviour import human_wait, type_like_human
 from ...utils.config import USERNAME, PASSWORD
 
 
+def clear_session():
+    """Clear any existing session data"""
+    if os.path.exists("instagram_session.json"):
+        try:
+            os.remove("instagram_session.json")
+            print("🗑️ Cleared old session data")
+        except Exception as e:
+            print(f"⚠️ Could not clear old session: {e}")
+
+
 def save_session(driver):
     """Save the current session cookies"""
     print("💾 Saving session data...")
@@ -55,6 +65,9 @@ def load_session(driver, wait):
 
 def login(driver, wait):
     """Login to Instagram"""
+    # Clear any existing session first
+    clear_session()
+    
     print("🌐 Opening Instagram...")
     driver.get("https://www.instagram.com/accounts/login/")
     human_wait(3, 5)

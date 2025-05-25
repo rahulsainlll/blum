@@ -10,7 +10,7 @@ PASSWORD = os.getenv("IG_PASSWORD")
 
 
 # Comment settings
-COMMENT_TEXT = os.getenv("IG_COMMENT", "Amazing work as always! ")
+COMMENT_TEXT =  "Amazing work as always! "
 COMMENT_VARIATIONS = [
     "Your talent is truly inspiring! ",
     "Another masterpiece!",
@@ -23,12 +23,6 @@ COMMENT_VARIATIONS = [
     "You're an inspiration to many! ",
     "Keep shining bright! ",
 ]
-
-# Safety settings
-MAX_POSTS_TO_PROCESS = 4  # Process exactly the 4 most recent posts
-MAX_LIKES_PER_RUN = MAX_POSTS_TO_PROCESS
-MAX_COMMENTS_PER_RUN = MAX_POSTS_TO_PROCESS
-MAX_SAVES_PER_RUN = MAX_POSTS_TO_PROCESS
 
 # Chrome options
 CHROME_OPTIONS = {
